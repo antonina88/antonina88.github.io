@@ -7,7 +7,7 @@
 		$(menu).css('display', 'none');
 		$(event.target).css('display', 'none');
 		$(btn_menu).css('display', 'block');
-	}
+	};
 
 	const openMenu = (event) => {
 		$(menu).css('display', 'flex');
@@ -15,7 +15,7 @@
 		$(event.target).css('display', 'none');
 
 		$(btn_close).on('click', closeMenu);
-	}
+	};
 
 	$(btn_menu).on('click', openMenu);
 
@@ -25,7 +25,7 @@
 		 $('html, body').animate({
             scrollTop: $(scroll_el).offset().top
         }, 500);
-	}
+	};
 
 	$('.main-menu a[href^="#"]').on('click', scrollToContent);
 })(jQuery)
